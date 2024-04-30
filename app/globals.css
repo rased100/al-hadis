@@ -39,6 +39,11 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  font-family: var(--bangla-font);
+}
+
+.myEngFont {
+  font-family: var(--inter-font);
 }
 
 @layer utilities {

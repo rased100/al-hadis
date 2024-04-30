@@ -26,8 +26,8 @@ const TopNavbar = () => {
               <IoSearchOutline size={19} />
             </div>
             <input
-              placeholder="Search hadith"
-              className="text-lg h-[51px] w-[268px] bg-gray-100 rounded pl-[40px] py-2 border border-gray-300  mr-[80px]"
+              placeholder="Search Hadith"
+              className="myEngFont text-md h-[51px] w-[268px] rounded pl-[40px] py-2 border border-gray-300 mr-[80px] focus:outline-none"
             />
           </div>
           <SupportBtn />

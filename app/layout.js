@@ -4,9 +4,13 @@ import localFont from "next/font/local";
 
 // google fonts
 
-// import { Inter, Noto_Serif_Bengali, Public_Sans } from "next/font/google";
+import { Inter, Noto_Serif_Bengali, Public_Sans } from "next/font/google";
 
-// const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--inter-font",
+});
 // const bgFont = Noto_Serif_Bengali({
 //   subsets: ["latin"],
 //   display: "swap",
@@ -15,7 +19,9 @@ import localFont from "next/font/local";
 
 const bFont = localFont({
   src: "../public/font/kalpurush.ttf",
+  subsets: ["latin"],
   display: "swap",
+  variable: "--bangla-font",
 });
 
 export const metadata = {
@@ -26,7 +32,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${bFont.className}`}>
+      <body className={`${bFont.variable} ${inter.variable}`}>
         <div>
           <TopNavbar />
         </div>
