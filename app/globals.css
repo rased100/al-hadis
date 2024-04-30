@@ -29,6 +29,24 @@
     display: block;
   }
 }
+/* search and logoText */
+@media (min-width: 1023px) and (max-width: 15350px) {
+  .xlblock {
+    display: block;
+  }
+}
+/* small search */
+@media (min-width: 0px) and (max-width: 1023px) {
+  .xsblock {
+    display: block;
+  }
+}
+/* আল হাদিস text */
+@media (min-width: 349px) and (max-width: 1023px) {
+  .smblock {
+    display: block;
+  }
+}
 /* responsive media .end */
 
 body {
