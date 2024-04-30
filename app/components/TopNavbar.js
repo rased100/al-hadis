@@ -35,7 +35,7 @@ const TopNavbar = () => {
             </div>
             <input
               placeholder="Search Hadith"
-              className="xlblock hidden myEngFont text-md h-[51px] w-[268px] rounded pl-[40px] py-2 border border-gray-300 mr-[80px] focus:outline-none"
+              className="xlblock hidden myEngFont text-md h-[51px] w-[268px] rounded-md pl-[40px] py-2 border border-gray-300 mr-[70px] focus:outline-none"
             />
           </div>
           {/* or */}
