@@ -4,7 +4,7 @@ import helpicon from "@/public/images/help-hand.svg";
 
 const SupportBtn = () => {
   return (
-    <button className="flex items-center bg-[#2b9e76] h-[48px] w-[151px] pl-[20px] px-[16px] rounded-md">
+    <button className="xxxlblock hidden flex items-center bg-[#2b9e76] h-[48px] w-[151px] pl-[20px] px-[16px] rounded-md">
       <div className="flex items-center">
         <p className="text-white">সাপোর্ট করুন</p>
         <Image
