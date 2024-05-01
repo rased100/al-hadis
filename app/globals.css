@@ -47,6 +47,12 @@
     display: block;
   }
 }
+/* nav help hend */
+@media (min-width: 1023px) and (max-width: 1535px) {
+  .helpblock {
+    display: block;
+  }
+}
 /* responsive media .end */
 
 body {
