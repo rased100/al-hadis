@@ -5,6 +5,7 @@ import localFont from "next/font/local";
 // google fonts
 
 import { Inter, Noto_Serif_Bengali, Public_Sans } from "next/font/google";
+import SideNavbar from "./components/SideNavbar";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -22,6 +23,7 @@ const bFont = localFont({
   subsets: ["latin"],
   display: "swap",
   variable: "--bangla-font",
+  weight: "400",
 });
 
 export const metadata = {
@@ -35,6 +37,7 @@ export default function RootLayout({ children }) {
       <body className={`${bFont.variable} ${inter.variable}`}>
         <div>
           <TopNavbar />
+          <SideNavbar />
         </div>
         <div>{children}</div>
       </body>
