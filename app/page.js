@@ -2,12 +2,24 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="pt-[20px] pl-[20px] pr-[20px]">
       <div>
-        {/* <h5>Al Hadis</h5>
-        <h5>Al Hadis</h5>
-        <h5>Al Hadis</h5>
-        <h5>Al Hadis</h5> */}
+        <h1 className="">al hadis dddddddddddddddddddddddddd</h1>
+        <h1 className="">al hadis dddddddddddddddddddddddddd</h1>
+        <h1 className="">al hadis dddddddddddddddddddddddddd</h1>
+        <h1 className="">al hadis dddddddddddddddddddddddddd</h1>
+        <h1 className="">al hadis dddddddddddddddddddddddddd</h1>
+        <h1 className="">al hadis dddddddddddddddddddddddddd</h1>
+        <h1 className="">al hadis dddddddddddddddddddddddddd</h1>
+        <h1 className="">al hadis dddddddddddddddddddddddddd</h1>
+        <h1 className="">al hadis dddddddddddddddddddddddddd</h1>
+        <h1 className="">al hadis dddddddddddddddddddddddddd</h1>
+        <h1 className="">al hadis dddddddddddddddddddddddddd</h1>
+        <h1 className="">al hadis dddddddddddddddddddddddddd</h1>
+        <h1 className="">al hadis dddddddddddddddddddddddddd</h1>
+        <h1 className="">al hadis dddddddddddddddddddddddddd</h1>
+        <h1 className="">al hadis dddddddddddddddddddddddddd</h1>
+        <h1 className="">al hadis dddddddddddddddddddddddddd</h1>
       </div>
     </main>
   );
