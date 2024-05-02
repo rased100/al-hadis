@@ -29,8 +29,11 @@ const HadithCards = async ({ books, chapters, hadith, section }) => {
         </div>
       </div>
       {booksData?.map((book) => (
-        <div className="flex items-center justify-between bg-white pl-5 pr-3 py-4 rounded-b-xl mb-3">
-          <div className="flex" key={book.id}>
+        <div
+          className="flex items-center justify-between bg-white pl-5 pr-3 py-4 rounded-b-xl mb-3"
+          key={book.id}
+        >
+          <div className="flex">
             <div className="pr-3 rounded-xl">
               <div>
                 <svg
