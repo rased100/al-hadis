@@ -9,8 +9,11 @@ export default async function Home() {
   const hadith = await getHadith();
   return (
     <main className="pt-[20px] pl-[20px] pr-[20px]">
-      <div className="">
-        <Sidebar books={books} chapters={chapters} />
+      <div className="flex">
+        <div className="hidden xl:flex">
+          <Sidebar books={books} chapters={chapters} />
+        </div>
+        <p>hadis collections</p>
       </div>
     </main>
   );

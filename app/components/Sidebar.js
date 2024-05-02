@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { IoSearchOutline } from "react-icons/io5";
+import { BsFillHexagonFill } from "react-icons/bs";
 
 const Sidebar = ({ books, chapters }) => {
   const [activeButton, setActiveButton] = useState("book");
@@ -16,14 +17,17 @@ const Sidebar = ({ books, chapters }) => {
         {books.map((book) => (
           <div
             key={book.id}
-            className="flex items-center bg-green-100 px-2 py-3 rounded-md"
+            className="flex items-center bg-green-100 px-4 py-5 rounded-xl"
           >
-            <h1 className="hover:bg-slate-300 mr-2 py-1 font-bold px-3 rounded-md text-2xl">
-              B
-            </h1>
-            <div>
-              <h2 className="font-bold">{book.title}</h2>
-              <p>সর্বমোট হাদিস - {book.number_of_hadis}</p>
+            <div className="flex items-center justify-center">
+              <BsFillHexagonFill size={50} color="#45ac85" />
+              <p className="absolute text-white myEngFont">{book.abvr_code}</p>
+            </div>
+            <div className="pl-4">
+              <p className="text-[17px] pt-1 pb-2">{book.title}</p>
+              <p className="text-[14px] text-gray-500">
+                সর্বমোট হাদিস - {book.number_of_hadis}
+              </p>
             </div>
           </div>
         ))}
@@ -33,14 +37,19 @@ const Sidebar = ({ books, chapters }) => {
         {chapters.map((chapter) => (
           <div
             key={chapter.id}
-            className="flex items-center bg-green-100 px-2 py-3 rounded-md"
+            className="flex items-center bg-green-100 px-4 py-5 rounded-xl"
           >
-            <h1 className="hover:bg-slate-300 mr-2 py-1 font-bold px-3 rounded-md text-2xl">
-              {chapter.id}
-            </h1>
-            <div>
-              <h2 className="font-bold">{chapter.title}</h2>
-              <p>হদিসের রেন্জ - {chapter.hadis_range}</p>
+            <div className="flex items-center justify-center">
+              <BsFillHexagonFill size={50} color="#45ac85" />
+              <p className="absolute text-white myEngFont">
+                {chapter.chapter_id}
+              </p>
+            </div>
+            <div className="pl-4">
+              <p className="text-[17px] pt-1 pb-2">{chapter.title}</p>
+              <p className="text-[14px] text-gray-500">
+                হদিসের রেন্জ - {chapter.hadis_range}
+              </p>
             </div>
           </div>
         ))}
@@ -75,7 +84,7 @@ const Sidebar = ({ books, chapters }) => {
         <hr />
         <div className="px-[16px]">
           {/* search */}
-          <div className="flex items-center py-[18px]">
+          <div className="flex items-center py-[15px]">
             <div className="absolute pl-4">
               <IoSearchOutline size={19} />
             </div>
