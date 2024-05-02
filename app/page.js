@@ -10,11 +10,11 @@ export default async function Home() {
   const hadith = await getHadith();
   return (
     <main className="pt-[20px] pl-[20px] pr-[20px]">
-      <div className="flex justify-end">
+      <div className="flex">
         <div className="hidden xl:flex">
           <Sidebar books={books} chapters={chapters} />
           <Sidebar books={books} chapters={chapters} />
-          <Sidebar books={books} chapters={chapters} />
+          {/* <Sidebar books={books} chapters={chapters} /> */}
         </div>
         <div className="ml-5">
           <Settings />
