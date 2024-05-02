@@ -36,7 +36,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${bFont.variable} ${inter.variable} bg-white`}>
         <TopNavbar />
-        <SideNavbar />
+        <div className="">
+          <SideNavbar />
+        </div>
         <div className="ml-[96px] bg-[#f2f4f6] rounded-3xl fixed top-[80px]">
           {children}
         </div>
