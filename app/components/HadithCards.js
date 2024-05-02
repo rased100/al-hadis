@@ -18,7 +18,7 @@ const HadithCards = async ({ books, chapters, hadith, section }) => {
   const sectionData = await section;
 
   return (
-    <div className="text-black  rounded-xl ">
+    <div className="text-black  rounded-xl ml-5">
       <div>
         <div className="flex items-center bg-white px-3 mb-[2px] h-[56px] rounded-t-xl">
           <div className="pl-3 pr-1">

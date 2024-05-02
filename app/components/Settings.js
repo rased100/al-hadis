@@ -1,15 +1,9 @@
 "use client";
 
-import Image from "next/image";
-import settingIcon from "@/public/setting.svg";
-import closeIcon from "@/public/close-icon.png";
-import { useState } from "react";
-
 const Settings = () => {
   return (
-    <div className="">
-      {/* <div className="w-[338px]"> */}
-      <div className="fixed top-[100px] h-[calc(100svh-100px)]  z-50 rounded-xl overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-300">
+    <div className="ml-5 w-[338px]">
+      <div className="h-[calc(100svh-100px)] rounded-xl overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-300">
         {/* <div className="w-[338px] h-[calc(100svh-100px-15px)]"> */}
         {/* settings */}
         <div className="px-5 bg-white rounded-xl py-5">
