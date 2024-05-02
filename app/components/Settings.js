@@ -9,7 +9,7 @@ const Settings = () => {
   return (
     <div className="">
       {/* <div className="w-[338px]"> */}
-      <div className="fixed top-[100px] h-[calc(100svh-100px)] overflow-auto  z-50 rounded-xl">
+      <div className="fixed top-[100px] h-[calc(100svh-100px)]  z-50 rounded-xl overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-300">
         {/* <div className="w-[338px] h-[calc(100svh-100px-15px)]"> */}
         {/* settings */}
         <div className="px-5 bg-white rounded-xl py-5">
