@@ -7,13 +7,14 @@ import { useState } from "react";
 
 const Settings = () => {
   return (
-    <div className="w-[338px] h-screen">
-      <div className="fixed top-[100px] w-[338px] h-[calc(100svh-100px)] overflow-auto bg-white z-50 rounded-xl shadow-md">
+    <div className="">
+      {/* <div className="w-[338px]"> */}
+      <div className="fixed top-[100px] h-[calc(100svh-100px)] overflow-auto  z-50 rounded-xl">
         {/* <div className="w-[338px] h-[calc(100svh-100px-15px)]"> */}
         {/* settings */}
         <div className="px-5 bg-white rounded-xl py-5">
           <div className="pb-5">
-            <h1 className="text-2xl text-center">সেটিংস</h1>
+            <h1 className="text-2xl text-center">সেটিংসs</h1>
           </div>
           <div className="font-selector-container mb-7">
             <div className="title text-md mb-1">আরবি ফন্ট সিলেক্ট করুন</div>

@@ -2,6 +2,7 @@ import Image from "next/image";
 import { getBooks, getChapters, getHadith, getSection } from "./api/HadisData";
 import Sidebar from "./components/Sidebar";
 import Settings from "./components/Settings";
+import HadithCards from "./components/HadithCards";
 
 export default async function Home() {
   const books = await getBooks();
@@ -12,12 +13,24 @@ export default async function Home() {
     <main className="pt-[20px] pl-[20px] pr-[20px]">
       <div className="flex">
         <div className="hidden xl:flex">
-          <Sidebar books={books} chapters={chapters} />
-          <Sidebar books={books} chapters={chapters} />
-          {/* <Sidebar books={books} chapters={chapters} /> */}
+          <div className="w-[350px]">
+            <Sidebar books={books} chapters={chapters} />
+          </div>
         </div>
         <div className="ml-5">
-          <Settings />
+          <div className="">
+            <HadithCards
+              books={books}
+              chapters={chapters}
+              section={section}
+              hadith={hadith}
+            />
+          </div>
+        </div>
+        <div className="hidden 2xl:flex">
+          <div className="ml-5 w-[338px]">
+            <Settings />
+          </div>
         </div>
         {/* <p>hadis collections</p> */}
       </div>
