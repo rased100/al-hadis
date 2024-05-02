@@ -57,7 +57,7 @@ const Sidebar = ({ books, chapters }) => {
     );
 
   return (
-    <div className="w-[350px]">
+    <div className="w-[350px] ml-[20px]">
       {/* <div className="w-[350px] "> */}
       <div className="bg-white rounded-xl h-[calc(100svh-100px-15px)]">
         <div className="flex justify-evenly text-center items-center">

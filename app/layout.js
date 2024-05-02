@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
         <div className="">
           <SideNavbar />
         </div>
-        <div className="ml-[96px] bg-[#f2f4f6] rounded-3xl fixed top-[80px]">
+        <div className="lg:ml-[96px] bg-[#f2f4f6] rounded-3xl lg:fixed lg:top-[80px]">
           {children}
         </div>
       </body>

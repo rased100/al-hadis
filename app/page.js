@@ -9,7 +9,7 @@ export default async function Home() {
   const section = await getSection();
   const hadith = await getHadith();
   return (
-    <main className="pt-[20px] pl-[20px] pr-[20px]">
+    <main className="pt-[20px] pr-[20px]">
       <div className="flex">
         <div className="hidden xl:flex">
           <Sidebar books={books} chapters={chapters} />
