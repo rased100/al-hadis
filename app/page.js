@@ -27,7 +27,7 @@ export default async function Home() {
             />
           </div>
         </div>
-        <div className="hidden 2xl:flex">
+        <div className="hidden 2xl:flex ">
           <div className="ml-5 w-[338px]">
             <Settings />
           </div>
