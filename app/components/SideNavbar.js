@@ -12,7 +12,7 @@ import Link from "next/link";
 
 const SideNavbar = () => {
   return (
-    <div className=" bg-white h-[80px] lg:h-full w-full lg:w-[96px] bottom-0 lg:left-0 fixed z-[-10]">
+    <div className=" bg-white h-[80px] lg:h-full w-full lg:w-[96px] bottom-0 lg:left-0 fixed lg:z-[-1]">
       <div className="pt-4 lg:pt-10">
         <div className="flex lg:flex-col lg:h-screen lg:justify-center justify-evenly items-center gap-7">
           <Link
