@@ -17,8 +17,8 @@ export default async function Home() {
             <Sidebar books={books} chapters={chapters} />
           </div>
         </div>
-        <div className="ml-5">
-          <div className="">
+        <div className="flex overflow-auto h-screen">
+          <div className="ml-5">
             <HadithCards
               books={books}
               chapters={chapters}
