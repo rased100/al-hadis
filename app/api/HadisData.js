@@ -1,6 +1,6 @@
 // book
 export async function getBooks() {
-  const result = await fetch("http://localhost:5000/books");
+  const result = await fetch("https://al-hadith-server.onrender.com/books");
 
   if (!result.ok) {
     throw new Error("There was an Error fething Data");
@@ -10,7 +10,7 @@ export async function getBooks() {
 
 // chapter
 export async function getChapters() {
-  const result = await fetch("http://localhost:5000/chapters");
+  const result = await fetch("https://al-hadith-server.onrender.com/chapter");
 
   if (!result.ok) {
     const text = await result.text();
@@ -23,7 +23,7 @@ export async function getChapters() {
 
 // hadith
 export async function getHadith() {
-  const result = await fetch("http://localhost:5000/hadiths");
+  const result = await fetch("https://al-hadith-server.onrender.com/hadith");
 
   if (!result.ok) {
     const text = await result.text();
@@ -36,7 +36,7 @@ export async function getHadith() {
 
 // section
 export async function getSection() {
-  const result = await fetch("http://localhost:5000/sections");
+  const result = await fetch("https://al-hadith-server.onrender.com/section");
 
   if (!result.ok) {
     const text = await result.text();

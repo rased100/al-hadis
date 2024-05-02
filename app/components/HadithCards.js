@@ -28,7 +28,7 @@ const HadithCards = async ({ books, chapters, hadith, section }) => {
           <p className="pl-1">1</p>
         </div>
       </div>
-      {booksData.map((book) => (
+      {booksData?.map((book) => (
         <div className="flex items-center justify-between bg-white pl-5 pr-3 py-4 rounded-b-xl mb-3">
           <div className="flex" key={book.id}>
             <div className="pr-3 rounded-xl">
@@ -60,7 +60,7 @@ const HadithCards = async ({ books, chapters, hadith, section }) => {
         </div>
       ))}
 
-      {chapterData.map((singelChapter) => (
+      {chapterData?.map((singelChapter) => (
         <div key={singelChapter.id}>
           <div className="flex items-center bg-white px-5 py-5 rounded-xl my-3">
             <h1 className="bg-[#45ac85] text-white mr-3 py-2 px-4 rounded-xl text-md font-bold">
@@ -87,8 +87,8 @@ const HadithCards = async ({ books, chapters, hadith, section }) => {
                   <h2>{section.preface}</h2>
                 </div>
                 {hadithData
-                  .filter((item) => item.section_id === section.id)
-                  .map((item) => (
+                  ?.filter((item) => item.section_id === section.id)
+                  ?.map((item) => (
                     <div
                       key={item.id}
                       className="bg-white px-5 py-5 rounded-xl my-3"
